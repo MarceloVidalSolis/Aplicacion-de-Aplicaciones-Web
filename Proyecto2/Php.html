@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <title>Programación de Aplicaciones Web</title>
+        <link rel="stylesheet" href="css/tabs.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/mover.js"></script>
+    </head>
+
+    <style>body {background-color: #F0F0F0;} </style>
+    <style>h2 {text-align: left;} h3 {text-align: right;}</style>
+    <style> table.beta,td,th {text-align: left;} table.beta {border-collapse: collapse;width: 100%;}th, td {padding: 15px;}</style>
+    
+    <body>
+        <font style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <table class="beta" style="width: 100%" style="border-collapse: collapse;">
+                <td style="margin-left: 5px;" bgcolor="#007BBF" colspan="2"><a href="index.html"><h2 style="color: #F0F0F0;">Proyecto</h2></a></td>
+                <tr><td bgcolor="#314F84" colspan="2"><a href="AplicacionesWeb.html"><h3 style="color: #F0F0F0;" style="text-align:right">Programación de Aplicaciones Web</h3></a></td></tr>
+                <td><h2 style="text-align: left;">Php</h2></td>
+                <br>
+            </table>
+            
+            <ul class="tabs">
+                <li><a href="#tab1">Introducción</a></li>
+                <li><a href="#tab2">¿Qué es?</a></li>
+                <li><a href="#tab3">Historia</a></li>
+                <li><a href="#tab4">Plataformas</a></li>
+                <li><a href="#tab5">Conclusión</a></li>
+           </ul>
+           
+           <div class="tab_container" text-align: justify>
+               <div class="tab_content" id="tab1">
+                <h1>Introducción</h1>
+                <p>En esta materia de Programación de Aplicaciones Web tenemos que conocer la variedad de lenguajes con los que se pueden programar las páginas web 
+                y siguiendo con la línea de investigaciones realizadas por mis demás compañeros, 
+                en este trabajo se abordará el tema de PHP, con el fin de aprender sus generalidades, 
+                así como algunas de sus características y su evolución en cada una de sus versiones, conceptualizaremos algunos puntos. 
+                </p>
+               </div>
+               <div class="tab_content" id="tab2" text-align: justify>
+                <h1>PHP</h1>
+                <p>PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente 
+                    adecuado para el desarrollo web y que puede ser incrustado en HTML.</p>
+                <p>Para ser practico, y no usar muchos comandos para mostrar HTML, como se hace en otros lenguajes, 
+                    las páginas de PHP contienen HTML con código incrustado el cual tiene su propia función. 
+                    El código de PHP está encapsulado en sus etiquetas especiales <?php texto?> y que permiten entrar y salir del "modo PHP".</p>  
+                <p>Lo que distingue a este lenguaje es que es ejecutado del lado del servidor, generando HTML y después lo envía al cliente. 
+                    El cliente al ejecutar el script solo recibirá el resultado de este, sin saber el verdadero código. 
+                    El servidor puede ser configurado para que todos los archivos de este se procesen en PHP.</p> 
+                <p>Su simplicidad y disponibilidad es lo que le atrae al programador principiante, pero a su vez ofrece muchas características 
+                    avanzadas para los programadores profesionales, sin embargo, esa misma ventaja también puede ser un inconveniente, 
+                    pues si no se dispone de la debida formación es fácil caer en malas prácticas. Pero independientemente de eso, 
+                    es una buena manera de adentrarse a los scripts ya que con PHP puedes realizar el “backend” de aplicaciones web de manera accesible, 
+                    sencilla y directa.</p>    
+                <p>Es por esta razón que el lenguaje PHP es encontrado comúnmente en CMS (“Content Management Systems”) o gestores de contenido, 
+                    como WordPress, Joomla, Drupal o Magento entre otros, e incluso lo encontramos en Frameworks potentes y usados por la comunidad,
+                    como son Laravel o Symfony.</p> 
+                <p>El motivo de este éxito no es solo la facilidad con la que PHP permite desarrollar páginas, 
+                    sino también formar parte del stack de tecnologías más habitual en Internet: LAMP (Linux, Apache, MySQL y PHP). 
+                    Y como es un lenguaje multiplataforma, lo que quiere decir que está disponible en los sistemas operativos más habituales.</p>
+               </div>
+               <div class="tab_content" id="tab3" text-align: justify>
+                <h1>¿Qué es?</h1>
+                <p>PHP es un lenguaje de programación que ya tiene tiempo entre nosotros, y así mismo ha pasado por distintos estados, 
+                    siempre creciendo en funcionalidades, rendimiento y herramientas disponibles en el lenguaje.</p>
+                <p>Al inicio PHP era solo un sencillo intérprete para procesamiento de formularios, creado por Rasmus Lerdorf bajo el nombre de PHP/FI, 
+                    y consistía en un conjunto de scripts CGI (Common Gateway Interface) escritos en C, en si es un método para la transmisión de información 
+                    hacia un compilador instalado en el servidor. Su función principal es la de añadir una mayor interacción a
+                    los documentos web que por medio del HTML se presentan de forma estática, que en el año 1995 se presentó al 
+                    mundo bajo el nombre de "Personal Home Page", versión que se ganó el acrónimo de PHP para este lenguaje. 
+                    Este mismo año Rasmus liberó el código fuente de su intérprete de formularios para que otros desarrolladores lo pudieran usar.</p>
+                    <p><a href="Versiones.html">Versiones</a></p>
+             </div>
+             <div class="tab_content" id="tab4" text-align: justify>
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Plataformas de desarrollo y ejecución de PHP</h1>
+                            <p>Para desarrollar sitios en PHP necesitamos instalar en nuestro pc todos los programas necesarios para trabajar: 
+                                un servidor web, el propio PHP y generalmente una base de datos como MySQL o cualquier otra.
+                                Contar con todos los programas necesarios para desarrollar en PHP es sencillo, pero existen innumerables posibilidades, 
+                                dependiendo de nuestro ordenador y de las necesidades del software que estemos creando.
+                            </p> 
+                        </td>
+                    </tr>
+                    </table>
+
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Plataformas para despliegue de sitios y aplicaciones PHP</h1>
+                            <p>En lo que respecta al despliegue de aplicaciones PHP, es decir, los sistemas donde van a estar en producción, 
+                            disponibles para los usuarios visitantes, la plataforma más habitual es Linux. Los motivos son diversos, 
+                            pero podríamos destacar la estabilidad del sistema, pero además que al ser software libre no es necesario pagar por una licencia.</p>
+                            <p>Lo que puede cambiar a gustos de los administradores es el servidor web donde se van a publicar los sitios. 
+                            Los servidores más importantes para PHP son Apache y Nginx. Apache es la opción más habitual y la que nos ofrece más posibilidades 
+                            de configuración. Nginx por su parte es un servidor más ligero, que se usa muy comúnmente cuando se desea optimizar PHP y conseguir 
+                            sitios un poco más veloces. Entonces recapitulando, tenemos que:</p>
+                            <p>
+                                <ol>
+                                    <li type="disc">PHP son las siglas en inglés del acrónimo Hypertext Pre-Processor, es decir, pre-procesador de hipertexto.</li>
+                                    <li type="disc">Es un lenguaje de programación de propósito general que se ejecuta en el lado del servidor.</li>
+                                    <li type="disc">Es un lenguaje interpretado.</li>
+                                    <li type="disc">Tiene múltiples formas de utilizarse, ya que puede utilizarse con scripts, de forma estructurada o programación en objetos.</li>
+                                    <li type="disc">Fue creado por Rasmus Lerdorf y apareció en el año 1994.</li>
+                                    <li type="disc">Está creado con la licencia de software libre PHPv3_01, que es una licencia Open Source.</li>          
+                                </ol>
+                            </p>
+                            <br>
+                            <p>PHP se utiliza principalmente para crear páginas web, para crear contenido dinámico y para trabajar con bases de datos y HTML.</p>
+                            <p>Soporta la mayoría de bases de datos, MySQL, PostgreSQL, SQL Server, MongoDB, y para casi todas existen drivers, y si no es así 
+                            podemos utilizar el driver ODBC, que se conecta a cualquier base de datos.</p>
+                        </td>
+                    </tr>
+                </table>
+             </div>
+             <div class="tab_content" id="tab5" text-align: justify>
+                <h1>Conclusión</h1>
+                <p>Este lenguaje de programación es y puede ser una herramienta de gran ayuda para nosotros los desarrolladores de aplicaciones web principiantes, 
+                su facilidad de uso y flexibilidad son la mejor opción que tenemos para comenzar. Su compatibilidad con los sistemas operativos más populares 
+                y con la gran cantidad de bases de datos lo hace perfecto, y pudiese ser una ventaja más, el saber que podemos utilizar la licencia de software 
+                libre PHPv3_01, que es una licencia Open Source y a eso sumarle alguna distribución del sistema operativo Linux para comenzar a trabajar sin tener
+                en mente el pagar por software.</p>
+             </div>
+           </div>              
+                    <!--Pie de página-->
+                    <td colspan="2" bgcolor="#F0F0F0">
+                        <br><br><br><br><br>
+                        <p>Licenciatura en Sistemas Computacionales</p>
+                        <p>&copy; Copyright 2020. Marcelo Vidal Solís</p>
+                    </td>
+                </tr>
+            </font>
+    </body>
