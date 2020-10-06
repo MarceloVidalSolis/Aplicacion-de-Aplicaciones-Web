@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7a7a7a;
+}
+
+.areaPrincipal{ /*Así se define una clase*/
+    background-image: url("../img/fondo.png"); /*agregar fondo de imagen al div*/
+    background-repeat: no-repeat; /* permitir o no que se repita una imagen*/
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /*Opacidad de la imagen*/
+    -webkit-background-size: 100% 100%;
+    /* Safari 3.0 */
+    -moz-background-size: 100% 100%;
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;
+    /* Opera 9.5 */
+    background-size: 100% 100%;
+    /* Gecko 2.0 (Firefox 4.0) and other CSS3-compilant browsers */
+}
+
+#encabezado{
+    background: #d0e6f8;
+    height: 240px;
+    text-align: center;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+
+.piePagina{
+    width: 100%; /*ancho*/
+    height: 100px; /*alto*/
+    background: #15101b; /*color de fondo*/
+    color: white; /*color de letra dentro de la clase*/
+    bottom: 0; /*espacio de separacion parte inferior*/
+    position: fixed;
+    left: 0; /*alineacion de contenidos a la izquierda*/
+}
+
+#menu{ /*identificador*/
+    height: 40px;
+    position: relative;
+    top: 200px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111111;
+
+}
+
+#datos{
+    width: 80%;
+    background-color: #88e94f;
+    height: 600px;
+    margin: auto;
+    opacity: 1;
+    color: #2a3e55;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 1em;
+ }
+
+ .box {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1em;
+    color: #d9480f;
+  }
+
+  img{
+      object-fit: fill;
+      width: 100%;
+      height: auto;
+  }
+
+  img.con{
+    object-fit: fill;
+    display: block;
+    width: 900px;
+    height: 500px;
+}
+img.nos{
+    object-fit: cover;
+    display: block;
+    width: 500px;
+    height: 400px;
+    padding-left: 10%;
+    margin-right: 50px;
+}
+
+
+  .containerf {
+    position: relative;
+    width: 100%;
+  }
+  
+  .imagef {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlayf {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a8ff33;
+  }
+  
+  .containerf:hover .overlayf {
+    opacity: 1;
+  }
+  
+  .textf {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+.slider {
+    width: 100%;
+    height: 85%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 58%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
