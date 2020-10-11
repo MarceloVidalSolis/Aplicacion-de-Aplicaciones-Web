@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1-0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>Práctica 10</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Incio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div class="container">
+            <h1>Mi Página con Bootstrap</h1>
+            <p>Bootstrap es un framework fron-end utilizado para desarrollar aplicaciones web y sitios mobile first,
+                o sea, con un layaout que se adapta a la pantalla del dispositivo utilizado por el usuario.
+            </p>
+            <p><h2>Docentes</h2></p>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nivel Profesional</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Paterno</th>
+                        <th scope="col">Materno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>DR.</td>
+                        <td>Luis</td>
+                        <td>Gutiérrez</td>
+                        <td>Alfaro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>C.P. Y MTRA.</td>
+                        <td>Claudia</td>
+                        <td>De la Rosa</td>
+                        <td>Tovar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>DR.</td>
+                        <td>Luis</td>
+                        <td>Trujillo</td>
+                        <td>Santos</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><h2>Materias</h2></p>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="gallery">
+                                        <a target="_blank">
+                                            <img src="img/compiladores.png" alt="Compiladores" width="300" height="200">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="gallery">
+                                        <a target="_blank">
+                                            <img src="img/IMAGEN DE CONTABILIDAD.jpg" alt="Contabilidad" width="300" height="200">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="gallery">
+                                        <a target="_blank">
+                                            <img src="img/ABD_LATS.png" alt="Base de Datos" width="300" height="200">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </td>     
+                    </tr>
+                </tbody>
+            </table>
+               
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Compiladores</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-justify">Al terminar el curso el estudiante aplicará 
+                            los principios, técnicas, estructuras y
+                            herramientas para la construcción de compiladores</h6>
+                        <p class="card-text text-justify">El conocimiento de la teoría y las técnicas que se 
+                            utilizan en la construcción de
+                            compiladores le permitirá al estudiante aplicar los conocimientos en lenguajes de
+                            programación, arquitectura de computadoras, teoría matemática de la
+                            computación, algoritmos e ingeniería de software. Así también conocer las
+                            diferentes herramientas automáticas que permiten la construcción de
+                            compiladores e interpretes.
+                            </p>
+                        <a href="https://www.youtube.com/watch?v=mAXMhuK3mAk" class="card-link">Link 1</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Contabilidad</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-justify">Introducir al alumno en el conocimiento de las diversas 
+                            áreas de la contaduría, de manera que sea capaz de distinguir conceptos y diseñar procedimientos elementales 
+                            que le resulten de utilidad en el desarrollo de sistemas de información contables computarizados.</h6>
+                        <p class="card-text text-justify" >Este curso está estructurado en siete unidades didácticas: introducción al 
+                            sistema contable, conceptos generales, balance general, estado de resultados, estado de costos y producción 
+                            y ventas, presupuestos y sistemas contables y administrativos automatizados. Estos contenidos permitirán 
+                            al alumno conocer y entender los principales estados contables y financieros como base para la administración 
+                            y desarrollo de sistemas contables automatizados.</p>
+                        <a href="https://www.youtube.com/watch?v=lPy2ZJr2rzU" class="card-link">Link 2</a>
+                    </div>
+                </div>    
+                <div class="col-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Base de Datos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-justify">El alumno aplicará los conocimientos necesarios para la  
+                            administración de una base de datos, con esquemas que originan un eficaz funcionamiento de los sistemas y 
+                            aplicaciones de bases de datos en ambiente multiusuario; los cuales van desde la creación, modificación, 
+                            mantenimiento, usuarios y permisos, auditoría, herramientas administrativas, respaldo y recuperación de la 
+                            información.</h6>
+                        <p class="card-text text-justify">Diversas aplicaciones pueden interactuar con una base de datos, ya sea para 
+                            manipular los datos almacenados, o bien, para manipular su estructura. Una vez creada la base de datos, 
+                            varios usuarios y aplicaciones realizan acciones sobre la misma, ante lo cual, es imprescindible administrar 
+                            todos los recursos disponibles para su operación. Estas actividades administrativas incluyen la creación, 
+                            modificación, respaldo y recuperación de información, seguridad y auditoría de una base de datos. 
+                            Para realizar estas y otras actividades, surge la figura del administrador de base de datos. 
+                            Este curso está dirigido a capacitar al alumno para cubrir este importante rol del desarrollo de 
+                            aplicaciones de bases de datos.</p>
+                        <a href="https://www.youtube.com/watch?v=UpvmRSAlWjc" class="card-link">Link 3</a>
+                    </div> 
+                </div>       
+            </div>
+        </div>
+    </article>
+    <footer>
+ <!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">UBICACIÓN</h5>
+          <p>Tuxtla Gutiérrez</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">CONTACTO</h5>
+          <p>vidalsolis.personal@gmail.com</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright py-3">© 2020 Copyright
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    </footer>
+</body>
+</html>
